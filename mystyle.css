@@ -6,6 +6,7 @@ html{
 :root {
     --main-green: #3A6D39;
     --light-green: #ddece2;
+    --neon-green: #64e861;
 }
 
 /* Body */
@@ -15,6 +16,26 @@ body {
     background-color: white;
     color: black;
     margin: 0 auto;
+}
+
+a:link {
+    color: var(--main-green);
+    text-decoration: none;
+}
+  
+a:visited {
+    color: var(--main-green);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: var(--main-green);
+    text-decoration: underline;
+}
+  
+a:active {
+    color: var(--main-green);
+    text-decoration: underline;
 }
 
 /* Header */
@@ -32,7 +53,7 @@ body {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: white !important;
     margin: 20px;
 }
 
@@ -62,6 +83,8 @@ header {
     background-color: black;
     color: white;
 }
+
+.dark-mode a { color: var(--neon-green); }
 
 .switch {
     position: relative;
@@ -127,16 +150,44 @@ input:checked + .slider:before {
     padding-top: 35px;
 }
 
-#posters {
-    display: flex;
-    flex-direction: row;
-    vertical-align: center;
-}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 #videos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    padding: 20px 0px 0px 0px;
+}
+
+h1 {
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 /* Spoiler Alert */
@@ -152,6 +203,23 @@ button {
     padding: 15px 15px;
     border-radius: 10px;
     font-size: 16px;
+    width: 700px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#spoiler {
+    color: red;
+    text-align: center;
 }
 
 /* Footer */

@@ -186,6 +186,15 @@ iframe {
     max-width: 100%;
 }
 
+.scene { 
+    float: none;
+    clear: both;
+    width: 700px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 h1 {
     max-width: 700px;
     align-content: center;
